@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import configparser
 import os
@@ -39,5 +39,6 @@ def getListOfFiles(dirName):
 
 listOfFiles = getListOfFiles("/home/zack/MathQualBot/QualbotQuestions")
 rfile = random.choice(listOfFiles)
-api.update_with_media(rfile, status="")
+api.update_with_media(rfile, status="Testing scheduled tweets.")
+#api.update_status("Testing scheduled tweets.")
 print("Done for the day!")

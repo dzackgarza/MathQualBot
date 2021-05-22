@@ -39,6 +39,6 @@ def getListOfFiles(dirName):
 
 listOfFiles = getListOfFiles("/home/zack/MathQualBot/QualbotQuestions")
 rfile = random.choice(listOfFiles)
-api.update_with_media(rfile, status="Testing scheduled tweets with pictures:")
+api.update_with_media(rfile, status="Today's qual question:")
 #api.update_status("Testing scheduled tweets.")
 print("Done for the day!")
